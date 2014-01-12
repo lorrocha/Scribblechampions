@@ -1,3 +1,7 @@
+.test {
+  border: red solid;
+}
+
 body {
   background-color:#f2f2fe;
 }
@@ -22,7 +26,6 @@ body {
 
 
 #container {
-  position: absolute;
 }
 #imageView {
   border: 1px solid #000;
@@ -32,5 +35,10 @@ body {
 }
 
 #timey {
+  font-size:1.75em;
+  font-family: 'Amatic SC', cursive;
+}
+
+label {
   font-family: 'Fredericka the Great', cursive;
 }

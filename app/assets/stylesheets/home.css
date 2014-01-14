@@ -35,15 +35,15 @@ body {
 
 #container {
 }
+
 #imageView {
-  border: 2px solid #86dbe2;
+  border: 1px solid #86dbe2;
   background-color:white;
   margin-top:-10px;
   width:850px;
   height:450px;
 }
 #imageTemp {
-/*  border:red solid 1px;*/
   position: absolute;
   width:850px;
   height:450px;
@@ -51,17 +51,12 @@ body {
   margin-top:-10px;
 }
 
-#timey {
-  font-size:1.75em;
-  font-family: 'Amatic SC', cursive;
-}
-
 #clear-button {
   margin-left:63px;
 }
 
 label {
-  text-align: center;
+ /* text-align: center;*/
   font-family: 'Fredericka the Great', cursive;
 }
 
@@ -90,11 +85,9 @@ label {
 }
 
 
-/* Medium screens */
+/* Medium screens*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #imageView {
-    border: 1px solid #000;
-    background-color:white;
     width:650px;
     height:450px;
     margin-left:10%;
@@ -107,3 +100,4 @@ label {
   }
 
 }
+

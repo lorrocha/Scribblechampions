@@ -1,69 +1,68 @@
-<div>
+<div class="row">
   <h2 class="header"> ScribbleChampions! -
     <span id="counter">
         15
     </span>
   </h2>
 </div>
-<div class="">
   <h5 class="prompter"><%= @prompt %></h5>
 </div>
+<div class="row">
+  <form>
+    <div class="small-3 columns">
+      <label>Drawing tool:</label>
+      <select id="dtool">
+        <option value="rect">Rectangle</option>
+        <option value="pencil">Pencil</option>
+        <option value="line">Line</option>
+      </select>
+    </div>
+    <div class="small-3 columns">
+      <label>Color:</label>
+      <select id="color">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="violet">Violet</option>
+        <option value="tan">Tan</option>
+      </select>
+    </div>
+    <div class="small-3 columns">
+      <label>Thickness:</label>
+      <select id="thickness">
+        <option value="thin">Thin</option>
+        <option value="normal">Normal</option>
+        <option value="thick">Thick</option>
+        <option value="thicker">Thicker</option>
+      </select>
+    </div>
+    <div class="small-3 columns">
+      <label>Timer:</label>
+      <input type="text" id="num_input" placeholder="#">
+    </div>
+  </form>
 </div>
-  <p>
-    <div class="row">
-      <form>
-        <div class="small-3 columns">
-          <label>Drawing tool:</label>
-          <select id="dtool">
-            <option value="rect">Rectangle</option>
-            <option value="pencil">Pencil</option>
-            <option value="line">Line</option>
-          </select>
-        </div>
-        <div class="small-3 columns">
-          <label>Color:</label>
-          <select id="color">
-            <option value="black">Black</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
-            <option value="violet">Violet</option>
-            <option value="tan">Tan</option>
-          </select>
-        </div>
-        <div class="small-3 columns">
-          <label>Thickness:</label>
-          <select id="thickness">
-            <option value="thin">Thin</option>
-            <option value="normal">Normal</option>
-            <option value="thick">Thick</option>
-            <option value="thicker">Thicker</option>
-          </select>
-        </div>
-        <div class="small-3 columns">
-          <a class="small button" id="clear-button">Clear</a>
-          <div class="small-4 columns">
-            <span id="timey">Timer!</span><input type="text" id="num_input" placeholder="#">
-          </div>
-        </div>
-      </form>
+<div class="row">
+  <div class="small-3 small-centered columns">
+    <a class="button" id="clear-button">Clear</a>
+  </div>
+</div>
+
+<div class="row">
+  <div id="container">
+    <div class="small-11 small-centered columns" id="teeest">
+      <canvas width="850" height="450"id="imageView">
+        <p>Unfortunately, your browser is currently unsupported by our web
+        application.  We are sorry for the inconvenience. Please use one of the
+        supported browsers listed below, or draw the image you want using an
+        offline tool.</p>
+        <p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a
+        href="http://www.mozilla.com">Firefox</a>, <a
+        href="http://www.apple.com/safari">Safari</a>, and <a
+        href="http://www.konqueror.org">Konqueror</a>.</p>
+      </canvas>
     </div>
-  </p>
-    </div>
-    <div class="row test">
-      <div id="container">
-        <div class="small-12">
-          <canvas id="imageView" width="500px" height="500px" class="small-centered">
-            <p>Unfortunately, your browser is currently unsupported by our web
-            application.  We are sorry for the inconvenience. Please use one of the
-            supported browsers listed below, or draw the image you want using an
-            offline tool.</p>
-            <p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a
-            href="http://www.mozilla.com">Firefox</a>, <a
-            href="http://www.apple.com/safari">Safari</a>, and <a
-            href="http://www.konqueror.org">Konqueror</a>.</p>
-          </canvas>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>

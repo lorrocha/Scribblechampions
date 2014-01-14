@@ -1,5 +1,7 @@
 body {
-  background-color:#f2f2fe;
+  background-color:#ecf0b6;
+  border-left:dashed 12px white;
+  border-right:dashed 12px white;
 }
 
 #numbercount {
@@ -9,29 +11,39 @@ body {
 }
 
 .header {
+  background-color:#86dbe2;
+  border: white dashed 3px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top:-10px;
   text-align:center;
   font-size:3em;
   font-family: 'Fredericka the Great', cursive;
 }
 
 .prompter {
+  margin-top:-10px;
   text-align:center;
   font-size:2em;
   font-family: 'Amatic SC', cursive;
+}
+
+#dtool, #color, #thickness, #num_input {
+  border: 3px solid #86dbe2;
 }
 
 
 #container {
 }
 #imageView {
-  border: 1px solid #000;
+  border: 2px solid #86dbe2;
   background-color:white;
   margin-top:-10px;
   width:850px;
   height:450px;
 }
 #imageTemp {
-  border:red solid 1px;
+/*  border:red solid 1px;*/
   position: absolute;
   width:850px;
   height:450px;
@@ -49,6 +61,7 @@ body {
 }
 
 label {
+  text-align: center;
   font-family: 'Fredericka the Great', cursive;
 }
 

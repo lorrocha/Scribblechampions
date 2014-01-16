@@ -28,7 +28,7 @@
     if (totalSeconds > 0) {
     window.setTimeout('Tick()', 1000);
     } else {
-      // location.reload();
+      location.reload();
       return;
     }
   };

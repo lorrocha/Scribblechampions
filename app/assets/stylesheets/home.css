@@ -1,5 +1,7 @@
 body {
-  background-color:#f2f2fe;
+  background-image:url('possiblepolka.jpg');
+  border-left:dashed 12px white;
+  border-right:dashed 12px white;
 }
 
 #numbercount {
@@ -9,28 +11,92 @@ body {
 }
 
 .header {
+  border: white dashed 3px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top:-10px;
   text-align:center;
-  font-size:4em;
+  font-size:3em;
   font-family: 'Fredericka the Great', cursive;
 }
 
 .prompter {
+  margin-top:-10px;
   text-align:center;
   font-size:2em;
   font-family: 'Amatic SC', cursive;
 }
 
+#dtool, #color, #thickness, #num_input {
+  border: 3px solid #86dbe2;
+}
+
 
 #container {
-  position: absolute;
-}
-#imageView {
-  border: 1px solid #000;
-}
-#imageTemp {
-  position: absolute; top: 1px; left: 1px;
 }
 
-#timey {
+#imageView {
+  border: 1px solid #86dbe2;
+  background-color:white;
+  margin-top:-10px;
+  width:850px;
+  height:450px;
+}
+#imageTemp {
+  position: absolute;
+  width:850px;
+  height:450px;
+  margin-left:-850px;
+  margin-top:-10px;
+}
+
+#clear-button {
+  margin-left:63px;
+}
+
+label {
+ /* text-align: center;*/
   font-family: 'Fredericka the Great', cursive;
 }
+
+/* Small Screens */
+
+@media only screen and (max-width: 40.063em) {
+  .header {
+    font-size:2em;
+  }
+
+  #imageView {
+    padding:0px;
+    width:400px;
+  }
+
+  #imageTemp {
+    width:400px;
+    height:450px;
+    margin-left:-400px;
+  }
+
+  #clear-button {
+    margin-left:0px;
+  }
+
+}
+
+
+/* Medium screens*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #imageView {
+    width:650px;
+    height:450px;
+    margin-left:10%;
+  }
+
+  #imageTemp {
+    width:650px;
+    height:450px;
+    margin-left:-650px;
+  }
+
+}
+
